@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Calculator</string>
     <string name="settings_description">Settings button</string>
+    <string name="backspace_description">Backspace button</string>
 </resources>

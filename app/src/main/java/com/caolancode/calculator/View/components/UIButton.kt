@@ -1,4 +1,4 @@
-package com.caolancode.calculator.components
+package com.caolancode.calculator.View.components
 
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text

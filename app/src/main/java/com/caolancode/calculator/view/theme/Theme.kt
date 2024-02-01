@@ -1,4 +1,4 @@
-package com.caolancode.calculator.ui.theme
+package com.caolancode.calculator.view.theme
 
 import android.app.Activity
 import android.os.Build

@@ -1,4 +1,4 @@
-package com.caolancode.calculator.View.components
+package com.caolancode.calculator.view.components
 
 import androidx.compose.runtime.Composable
 

@@ -1,4 +1,4 @@
-package com.caolancode.calculator.ui.theme
+package com.caolancode.calculator.view.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -14,63 +14,68 @@ import com.caolancode.calculator.R
 
 @Composable
 fun NumberPanel() {
-    Column {
-        Row {
-            Button(
-                onClick = { 
-                    
-                }
-            ) {
-                Icon(
-                    Icons.Default.Settings,
-                    contentDescription = stringResource(id = R.string.settings_description))
-            }
-            Button(
-                onClick = {
+    Row {
+        Column {
+            Row {
+                Button(
+                    onClick = {
 
+                    }
+                ) {
+                    Icon(
+                        Icons.Default.Settings,
+                        contentDescription = stringResource(id = R.string.settings_description))
                 }
-            ) {
-                Icon(
-                    painter = painterResource(id = R.drawable.baseline_backspace_24),
-                    contentDescription = stringResource(id = R.string.backspace_description)
-                )
-            }
-            Button(
-                onClick = {
-                
+                Button(
+                    onClick = {
+
+                    }
+                ) {
+                    Icon(
+                        painter = painterResource(id = R.drawable.baseline_backspace_24),
+                        contentDescription = stringResource(id = R.string.backspace_description)
+                    )
                 }
-            ) {
-                Text(text = "C")
+                Button(
+                    onClick = {
+
+                    }
+                ) {
+                    Text(text = "C")
+                }
             }
+            Row {
+                CalculatorButton(content = "%")
+                CalculatorButton(content = "(")
+                CalculatorButton(content = ")")
+            }
+            Row {
+                CalculatorButton(content = "7")
+                CalculatorButton(content = "8")
+                CalculatorButton(content = "9")
+            }
+            Row {
+                CalculatorButton(content = "4")
+                CalculatorButton(content = "5")
+                CalculatorButton(content = "6")
+            }
+            Row {
+                CalculatorButton(content = "1")
+                CalculatorButton(content = "2")
+                CalculatorButton(content = "3")
+            }
+            Row {
+                CalculatorButton(content = "0")
+                CalculatorButton(content = ".")
+            }
+        }
+        Column {
             CalculatorButton(content = "÷")
-        }
-        Row {
-            CalculatorButton(content = "%")
-            CalculatorButton(content = "(")
-            CalculatorButton(content = ")")
             CalculatorButton(content = "x")
-        }
-        Row {
-            CalculatorButton(content = "7")
-            CalculatorButton(content = "8")
-            CalculatorButton(content = "9")
             CalculatorButton(content = "-")
-        }
-        Row {
-            CalculatorButton(content = "4")
-            CalculatorButton(content = "5")
-            CalculatorButton(content = "6")
             CalculatorButton(content = "+")
-        }
-        Row {
-            CalculatorButton(content = "1")
-            CalculatorButton(content = "2")
-            CalculatorButton(content = "3")
-        }
-        Row {
-            CalculatorButton(content = "0")
-            CalculatorButton(content = ".")
             CalculatorButton(content = "=")
         }
     }
+
 }

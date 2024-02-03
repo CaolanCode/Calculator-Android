@@ -36,13 +36,7 @@ fun NumberPanel() {
                         contentDescription = stringResource(id = R.string.backspace_description)
                     )
                 }
-                Button(
-                    onClick = {
-
-                    }
-                ) {
-                    Text(text = "C")
-                }
+                CalculatorButton(content = "C")
             }
             Row {
                 CalculatorButton(content = "%")

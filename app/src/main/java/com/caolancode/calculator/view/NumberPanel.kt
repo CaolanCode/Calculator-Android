@@ -17,58 +17,39 @@ fun NumberPanel() {
     Row {
         Column {
             Row {
-                Button(
-                    onClick = {
-
-                    }
-                ) {
-                    Icon(
-                        Icons.Default.Settings,
-                        contentDescription = stringResource(id = R.string.settings_description))
-                }
-                Button(
-                    onClick = {
-
-                    }
-                ) {
-                    Icon(
-                        painter = painterResource(id = R.drawable.baseline_backspace_24),
-                        contentDescription = stringResource(id = R.string.backspace_description)
-                    )
-                }
+                SettingButton()
+                DeleteButton()
                 CalculatorButton(content = "C")
+                CalculatorButton(content = "÷")
             }
             Row {
                 CalculatorButton(content = "%")
                 CalculatorButton(content = "(")
                 CalculatorButton(content = ")")
+                CalculatorButton(content = "x")
             }
             Row {
                 CalculatorButton(content = "7")
                 CalculatorButton(content = "8")
                 CalculatorButton(content = "9")
+                CalculatorButton(content = "-")
             }
             Row {
                 CalculatorButton(content = "4")
                 CalculatorButton(content = "5")
                 CalculatorButton(content = "6")
+                CalculatorButton(content = "+")
             }
             Row {
                 CalculatorButton(content = "1")
                 CalculatorButton(content = "2")
                 CalculatorButton(content = "3")
+                CalculatorButton(content = "=")
             }
             Row {
                 CalculatorButton(content = "0")
                 CalculatorButton(content = ".")
             }
-        }
-        Column {
-            CalculatorButton(content = "÷")
-            CalculatorButton(content = "x")
-            CalculatorButton(content = "-")
-            CalculatorButton(content = "+")
-            CalculatorButton(content = "=")
         }
     }
 

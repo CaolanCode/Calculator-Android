@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Button
@@ -29,7 +30,8 @@ fun SettingButton(modifier: Modifier) {
     ) {
         Icon(
             Icons.Default.Settings,
-            contentDescription = stringResource(id = R.string.settings_description)
+            contentDescription = stringResource(id = R.string.settings_description),
+            modifier = modifier.size(dimensionResource(id = R.dimen.icon_size))
         )
     }
 }

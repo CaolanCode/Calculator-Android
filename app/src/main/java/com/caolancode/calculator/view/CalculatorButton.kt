@@ -34,7 +34,7 @@ fun CalculatorButton(
         ) {
             Text(
                 text = content,
-                color = Color.White,
+                color = colorResource(id = R.color.orange_50),
                 fontSize = dimensionResource(id = R.dimen.operator_font_size).value.sp
             )
         }

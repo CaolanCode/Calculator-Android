@@ -36,7 +36,8 @@ fun SettingButton(modifier: Modifier) {
         Icon(
             Icons.Default.Settings,
             contentDescription = stringResource(id = R.string.settings_description),
-            modifier = modifier.size(dimensionResource(id = R.dimen.icon_size))
+            modifier = modifier.size(dimensionResource(id = R.dimen.icon_size)),
+            tint = colorResource(id = R.color.yellow_50)
         )
     }
 }

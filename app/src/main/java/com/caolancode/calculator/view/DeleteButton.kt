@@ -36,7 +36,8 @@ fun DeleteButton(
         Icon(
             painter = painterResource(id = R.drawable.baseline_backspace_24),
             contentDescription = stringResource(id = R.string.backspace_description),
-            modifier = modifier.size(dimensionResource(id = R.dimen.icon_size))
+            modifier = modifier.size(dimensionResource(id = R.dimen.icon_size)),
+            tint = colorResource(id = R.color.orange_50)
         )
     }
 }

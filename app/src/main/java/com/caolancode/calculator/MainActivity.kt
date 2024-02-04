@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.caolancode.calculator.view.EquationDisplay
 import com.caolancode.calculator.view.NumberPanel
+import com.caolancode.calculator.view.ResultDisplay
 import com.caolancode.calculator.view.theme.CalculatorTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,6 +25,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     Column {
+                        ResultDisplay()
                         EquationDisplay()
                         NumberPanel()
                     }

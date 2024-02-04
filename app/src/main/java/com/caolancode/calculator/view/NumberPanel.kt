@@ -1,4 +1,4 @@
-package com.caolancode.calculator.view.components
+package com.caolancode.calculator.view
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -6,11 +6,11 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.caolancode.calculator.R
+import com.caolancode.calculator.view.CalculatorButton
 
 @Composable
 fun NumberPanel() {

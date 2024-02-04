@@ -25,6 +25,7 @@ import com.caolancode.calculator.R
 fun CalculatorButton(
     content: String,
     modifier: Modifier) {
+    val operators = "+-=x÷C"
     Button(
         modifier = modifier
             .height(dimensionResource(id = R.dimen.button_height))
@@ -33,10 +34,18 @@ fun CalculatorButton(
 
         }
     ) {
-        Text(
-            text = content,
-            color = Color.White,
-            fontSize = dimensionResource(id = R.dimen.button_font_size).value.sp
-        )
+        if (operators.contains(content)) {
+            Text(
+                text = content,
+                color = Color.White,
+                fontSize = dimensionResource(id = R.dimen.operator_font_size).value.sp
+            )
+        } else {
+            Text(
+                text = content,
+                color = Color.White,
+                fontSize = dimensionResource(id = R.dimen.number_font_size).value.sp
+            )
+        }
     }
 }

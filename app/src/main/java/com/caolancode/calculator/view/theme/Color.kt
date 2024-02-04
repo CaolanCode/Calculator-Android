@@ -2,10 +2,14 @@ package com.caolancode.calculator.view.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+val Yellow80 = Color(0xFFc89500)
+val Orange80 = Color(0xFFc54100)
+val Pink80 = Color(0xFFc40054)
+val Purple80 = Color(0xFF4a1f98)
+val Blue80 = Color(0xFF1565c0)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+val Yellow50 = Color(0xFFffbe0b)
+val Orange50 = Color(0xFFfb5607)
+val Pink50 = Color(0xFFff006e)
+val Purple50 = Color(0xFF8338ec)
+val Blue50 = Color(0xFF3a86ff)

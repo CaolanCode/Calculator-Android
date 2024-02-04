@@ -28,9 +28,7 @@ import com.caolancode.calculator.view.CalculatorButton
 fun NumberPanel() {
     Column(
         modifier = Modifier
-            .fillMaxWidth()
-            .fillMaxHeight()
-            .height(400.dp),
+            .fillMaxHeight(),
         verticalArrangement = Arrangement.Bottom
     ) {
         Row {

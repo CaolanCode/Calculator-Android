@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="button_height">60dp</dimen>
+    <dimen name="button_height">100dp</dimen>
     <dimen name="button_padding">3dp</dimen>
+    <dimen name="button_font_size">30sp</dimen>
 </resources>

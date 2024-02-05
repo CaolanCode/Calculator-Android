@@ -5,15 +5,19 @@ import androidx.lifecycle.ViewModel
 
 class CalculatorViewModel: ViewModel() {
     val equation = mutableStateOf("")
-    fun append(char: String) {
+    fun append(input: String) {
+        val operators = "+-x÷"
         if (equation.value != "") {
-            val lastNumber = equation.value.last()
-            val operators = "+-x÷"
-            if (operators.contains(char) && operators.contains(lastNumber)) {
+            if (operators.contains(input) && operators.contains(equation.value.last())) {
                 return
             }
         }
-        equation.value += char
+        if (input == ".") {
+            if (equation.value == "" || operators.contains(equation.value.last())) {
+                equation.value += "0"
+            }
+        }
+        equation.value += input
     }
 
     fun clear() {

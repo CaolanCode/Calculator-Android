@@ -13,11 +13,13 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.sp
 import com.caolancode.calculator.R
+import com.caolancode.calculator.viewmodel.CalculatorViewModel
 
 @Composable
 fun CalculatorButton(
     content: String,
-    modifier: Modifier
+    modifier: Modifier,
+    onClick: () -> Unit
 ) {
     if (stringResource(id = R.string.operators).contains(content)) {
         Button(
@@ -27,9 +29,7 @@ fun CalculatorButton(
             colors = ButtonDefaults.buttonColors(
                 containerColor = colorResource(id = R.color.dark_button)
             ),
-            onClick = {
-
-            }
+            onClick = onClick
         ) {
             Text(
                 text = content,
@@ -42,9 +42,7 @@ fun CalculatorButton(
             modifier = modifier
                 .height(dimensionResource(id = R.dimen.button_height))
                 .padding(dimensionResource(id = R.dimen.button_padding)),
-            onClick = {
-
-            },
+            onClick = onClick,
             colors = ButtonDefaults.buttonColors(
                 containerColor = colorResource(id = R.color.gray_button)
             )

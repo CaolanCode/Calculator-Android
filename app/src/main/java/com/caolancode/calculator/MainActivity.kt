@@ -33,10 +33,10 @@ class MainActivity : ComponentActivity() {
 }
 
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CalculatorTheme {
-        NumberPanel()
-    }
-}
+//@Preview(showBackground = true)
+//@Composable
+//fun GreetingPreview() {
+//    CalculatorTheme {
+//        NumberPanel()
+//    }
+//}

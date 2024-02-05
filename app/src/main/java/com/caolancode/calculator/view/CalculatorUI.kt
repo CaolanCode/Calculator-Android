@@ -14,16 +14,14 @@ fun CalculatorUI(
     modifier: Modifier,
     calculatorViewModel: CalculatorViewModel
 ) {
-    val equation = calculatorViewModel.equation
-
     Column(
         modifier = modifier
             .padding(dimensionResource(id = R.dimen.full_view_padding))
     ) {
         ResultDisplay()
         Spacer(modifier = modifier.weight(1f))
-        EquationDisplay(equation)
+        EquationDisplay(calculatorViewModel.equation)
         Spacer(modifier = modifier.weight(1f))
-        NumberPanel()
+        NumberPanel(calculatorViewModel)
     }
 }

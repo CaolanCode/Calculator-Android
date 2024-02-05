@@ -1,11 +1,10 @@
 package com.caolancode.calculator.viewmodel
 
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.lifecycle.ViewModel
 
 class CalculatorViewModel: ViewModel() {
-    private val equation = mutableStateOf("")
+    val equation = mutableStateOf("")
     fun append(char: String) {
         equation.value += char
     }

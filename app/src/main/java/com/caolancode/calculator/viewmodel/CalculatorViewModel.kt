@@ -6,6 +6,13 @@ import androidx.lifecycle.ViewModel
 class CalculatorViewModel: ViewModel() {
     val equation = mutableStateOf("")
     fun append(char: String) {
+        if (equation.value != "") {
+            val lastNumber = equation.value.last()
+            val operators = "+-x÷"
+            if (operators.contains(char) && operators.contains(lastNumber)) {
+                return
+            }
+        }
         equation.value += char
     }
 

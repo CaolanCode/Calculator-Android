@@ -21,7 +21,8 @@ fun NumberPanel(
             )
             DeleteButton(
                 modifier = Modifier
-                    .weight(1f)
+                    .weight(1f),
+                onClick = { calculatorViewModel.delete()}
             )
             CalculatorButton(
                 content = "C",

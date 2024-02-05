@@ -16,7 +16,8 @@ import com.caolancode.calculator.R
 
 @Composable
 fun DeleteButton(
-    modifier: Modifier
+    modifier: Modifier,
+    onClick: () -> Unit
 ) {
     Button(
         modifier = modifier
@@ -25,9 +26,7 @@ fun DeleteButton(
         colors = ButtonDefaults.buttonColors(
             containerColor = colorResource(id = R.color.dark_button)
         ),
-        onClick = {
-
-        }
+        onClick = onClick
     ) {
         Icon(
             painter = painterResource(id = R.drawable.baseline_backspace_24),

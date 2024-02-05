@@ -27,8 +27,6 @@ import com.caolancode.calculator.view.CalculatorButton
 @Composable
 fun NumberPanel() {
     Column(
-        modifier = Modifier
-            .fillMaxHeight(),
         verticalArrangement = Arrangement.Bottom
     ) {
         Row {

@@ -21,7 +21,7 @@ fun CalculatorButton(
     modifier: Modifier,
     onClick: () -> Unit
 ) {
-    if (stringResource(id = R.string.operators).contains(content)) {
+    if (stringResource(id = R.string.button_operators).contains(content)) {
         Button(
             modifier = modifier
                 .height(dimensionResource(id = R.dimen.button_height))

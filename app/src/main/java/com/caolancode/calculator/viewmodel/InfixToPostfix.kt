@@ -17,12 +17,19 @@ class InfixToPostfix {
         else -> false
     }
 
+    private fun associativity(ch: Char): Char = when (ch) {
+        '^' -> 'R'
+        else -> 'L'
+    }
+
     fun postfixConversion(equation: MutableState<String>): MutableState<String> {
         val postfix = mutableStateOf("")
         val stack = ArrayDeque<Char>()
         for (ch in equation.value) {
             if (!notNumeric(ch)) {
                 postfix.value += ch
+            } else if (ch == '(') {
+                stack.add(ch)
             } else if (ch == ')') {
                 while (
                     stack.isNotEmpty() &&
@@ -34,7 +41,8 @@ class InfixToPostfix {
             } else {
                 while (
                     stack.isNotEmpty() &&
-                    precedance(ch) <= precedance(stack.last())
+                    precedance(ch) <= precedance(stack.last()) &&
+                    associativity(ch) == 'L'
                 ) {
                     postfix.value += stack.removeLastOrNull()
                 }

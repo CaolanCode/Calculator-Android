@@ -5,7 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 
 class InfixToPostfix {
 
-    private fun precedance(ch: Char): Int =  when (ch) {
+    private fun precedence(ch: Char): Int =  when (ch) {
         '+', '-' -> 1
         'x', '÷' -> 2
         '^' -> 3
@@ -41,7 +41,7 @@ class InfixToPostfix {
             } else {
                 while (
                     stack.isNotEmpty() &&
-                    precedance(ch) <= precedance(stack.last()) &&
+                    precedence(ch) <= precedence(stack.last()) &&
                     associativity(ch) == 'L'
                 ) {
                     postfix.value += stack.removeLastOrNull()

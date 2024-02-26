@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.sp
 import com.caolancode.calculator.R
 
@@ -21,7 +22,7 @@ fun ResultDisplay() {
     ) {
         Text(
             text = "0",
-            fontSize = dimensionResource(id = R.dimen.result_font_size).value.sp
+            style = TextStyle(fontSize = dimensionResource(id = R.dimen.result_font_size).value.sp)
         )
     }
 }

@@ -6,4 +6,4 @@
 - Used `MutableDataLive` in ViewModel to observe from the MainActivity to display a `Toast` message
 
 ## Screenshot
-![Screenshot of Calculator](./images/calculator.jpg)
+<img src="./images/calculator.jpg" width="100">

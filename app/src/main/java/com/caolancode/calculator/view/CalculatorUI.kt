@@ -18,7 +18,7 @@ fun CalculatorUI(
         modifier = modifier
             .padding(dimensionResource(id = R.dimen.full_view_padding))
     ) {
-        ResultDisplay()
+        ResultDisplay(calculatorViewModel.result)
         Spacer(modifier = modifier.weight(1f))
         EquationDisplay(calculatorViewModel.equation)
         Spacer(modifier = modifier.weight(1f))

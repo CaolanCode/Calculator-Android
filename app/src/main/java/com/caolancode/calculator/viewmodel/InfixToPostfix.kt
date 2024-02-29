@@ -35,22 +35,23 @@ class InfixToPostfix {
                     stack.isNotEmpty() &&
                     stack.lastOrNull() != '('
                 ) {
-                    postfix.value += stack.removeLastOrNull()
+                    postfix.value += "${stack.removeLastOrNull()} "
                 }
                 stack.removeLastOrNull() // remove '('
             } else {
+                postfix.value += " "
                 while (
                     stack.isNotEmpty() &&
                     precedence(ch) <= precedence(stack.last()) &&
                     associativity(ch) == 'L'
                 ) {
-                    postfix.value += stack.removeLastOrNull()
+                    postfix.value += "${stack.removeLastOrNull()} "
                 }
                 stack.add(ch)
             }
         }
         while(stack.isNotEmpty()) {
-            postfix.value += stack.removeLastOrNull()
+            postfix.value += " ${stack.removeLastOrNull()}"
         }
         return postfix
     }
